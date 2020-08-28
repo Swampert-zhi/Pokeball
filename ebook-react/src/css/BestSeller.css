@@ -1,0 +1,49 @@
+.BestSeller .ant-card {
+    border-radius: 20px;
+}
+
+.BestSeller .ant-card-bordered {
+    border:none;
+}
+
+.BestSellerItem .ant-card-body{
+    padding: 0;
+}
+
+.ItemTitle .ant-card-meta-description {
+    color: rgb(97, 97, 97);
+}
+
+.ItemTitle{
+    border-radius: 20px 20px 0 0;
+    padding: 10px 0 5px 0px;
+    margin:0;
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: 汉仪乐喵体简;
+}
+
+.Item{
+    padding:20px 20px 150px 50px;
+}
+
+.ItemImage{
+    width: 12%;
+    float:left;
+}
+
+.ItemInfo{
+    margin:0 10px 0 10px;
+    width: 20%;
+    float:left;
+}
+
+.ItemDesc{
+    width: 50%;
+    float:left;
+}
+
+.SimpleDesc {
+    margin:0 10px 0 10px;
+    white-space: normal;
+}

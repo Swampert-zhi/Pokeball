@@ -1,0 +1,80 @@
+<view class="top">
+<view class="image">
+  <van-image width="80" height="100" src="{{book.image}}"/>
+</view>
+<view class="info">
+  <van-row class="title">{{book.title}}</van-row>
+  <van-row class="text">ISBN：{{book.isbn}}</van-row>
+  <van-row class="text">作者：{{book.author}}</van-row>
+  <van-row class="text">语言：{{book.language}}</van-row>
+  <van-row class="text">价格：￥{{book.price}}</van-row>
+  <van-row class="text">库存：{{book.stock}}</van-row>
+</view>
+</view>
+<view class="desc-div">
+  <van-row></van-row>
+  <van-row class="desc-title">简介：</van-row>
+  <van-row class="desc">{{book.description}}</van-row>
+</view>
+<van-goods-action class="tabbar">
+  <van-goods-action-icon icon="chat-o" class="tabbaritem"
+  text="客服" bind:click="onClickIcon" />
+  <van-goods-action-icon icon="cart-o" class="tabbaritem"
+  text="购物车" bind:click="onClickIcon" />
+  <van-goods-action-button
+    text="加入购物车"
+    type="warning"
+    class="tabbaritem"
+    bind:click="showModel"
+    color="linear-gradient(to right, #4bb0ff, #6149f6)"
+  />
+  <!-- <van-goods-action-button text="立即购买" bind:click="onClickButton" /> -->
+</van-goods-action>
+<van-tabbar active="{{0}}" bind:change="onChange">
+  <van-tabbar-item icon="home-o">书城</van-tabbar-item>
+  <van-tabbar-item icon="cart-o">购物车</van-tabbar-item>
+  <!-- <van-tabbar-item icon="friends-o">标签</van-tabbar-item>
+  <van-tabbar-item icon="setting-o">标签</van-tabbar-item> -->
+</van-tabbar>
+<van-popup
+  show="{{ show }}"
+  closeable
+  position="bottom"
+  custom-style="height: 70%;"
+  bind:close="onClose">
+  <view class="popup">
+  <view class="purchase-top">
+    <view class="purchase-image">
+      <van-image width="80" height="100" src="{{book.image}}"/>
+    </view>
+    <view class="purchase-info" >
+      <van-row class="purchase-title">{{book.title}}</van-row>
+      <van-row class="purchase-text">价格：￥{{book.price}}</van-row>
+      <van-row class="purchase-text">库存：{{book.stock}}</van-row>
+    </view>
+    </view>
+    <view class="select-num">
+      <van-divider class="divider"/>
+      <van-row>
+        <view class="select-text">购买数量</view>
+        <view class="select-stepper">
+          <van-stepper 
+          value="{{purchasenum}}" integer 
+          min="{{0}}" max="{{book.stock}}"
+          bind:change="changeNum"
+          />
+        </view>      
+      </van-row>
+    </view>
+    <view class="purchase-button">
+      <van-divider class="divider"/>
+      <van-button 
+      type="primary" 
+      size="large"
+      bind:click="purchase"
+      round
+      color="linear-gradient(to right, #4bb0ff, #6149f6)"
+      >购买</van-button>
+    </view>
+  </view>
+</van-popup>

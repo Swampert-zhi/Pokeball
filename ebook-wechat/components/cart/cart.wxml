@@ -1,0 +1,25 @@
+<block wx:for="{{cartitems}}" wx:for-item="cartitem">
+<van-swipe-cell right-width="{{65}}" async-close>
+  <van-card
+    price="{{cartitem.book.price*cartitem.num}}"
+    title="{{cartitem.book.title}}"
+    class="goods-card"
+    thumb="{{cartitem.book.image}}">
+
+  <view slot="bottom">
+    <van-stepper id="{{cartitem.cartId}}" class="stepper"
+    value="{{cartitem.num}}" bind:change="onChange" />
+    <van-checkbox id="{{cartitem.cartId}}" 
+    value="{{cartitem.select}}" bind:change="changeSelect"/>
+  </view>
+  </van-card>
+  <view slot="right" id="{{cartitem.cartId}}" class="delete" bindtap="onDelete">删除</view>
+</van-swipe-cell>
+</block>
+<view class="submitbar">
+  <van-submit-bar
+  price="{{totalprice}}"
+  button-text="提交订单"
+  bind:submit="onSubmit"
+  />
+</view>

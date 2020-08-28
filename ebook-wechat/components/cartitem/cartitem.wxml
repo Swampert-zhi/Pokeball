@@ -1,0 +1,11 @@
+<!--components/cartitem/cartitem.wxml-->
+<van-card
+    price="{{cartitem.book.price*cartitem.num}}"
+    title="{{cartitem.book.title}}"
+    class="goods-card"
+    thumb="{{cartitem.book.image}}">
+  <view slot="bottom">
+    <van-stepper value="{{cartitem.num}}" bind:change="onChange" />
+  </view>
+</van-card>
+<view slot="right" class="delete" bindtap="ondelete">删除</view>

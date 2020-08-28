@@ -1,0 +1,32 @@
+
+ .input{
+
+    border: 1px solid #2f9cfa;
+    /*box-shadow: none;*/
+    border-radius: 5px;
+}
+ .input:focus{
+
+    border: 1px solid #2f9cfa;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #2f9cfa;
+}
+
+
+.ant-table-thead > tr > th {
+    color: #fbffff;
+    background: #91ceff ;
+    font-size: 15px;
+
+}
+.ant-table-tbody > tr > td {
+    height:65px;
+}
+.ant-table-tbody > tr:hover:not(.ant-table-expanded-row) > td {
+    background-color: #bfdffd !important;
+    height:65px;
+}
+
+p{
+    white-space: pre-wrap;
+}

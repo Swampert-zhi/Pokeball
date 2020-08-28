@@ -1,0 +1,44 @@
+.RichestUser .ant-card {
+    border-radius: 20px;
+}
+
+.RichestUser .ant-card-bordered {
+    border:none;
+}
+
+.RichestUserItem .ant-card-body{
+    padding: 0;
+}
+
+.ItemTitle .ant-card-meta-description {
+    color: rgb(97, 97, 97);
+}
+
+.ItemTitle{
+    border-radius: 20px 20px 0 0;
+    padding: 10px 0 5px 0px;
+    margin:0;
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: 汉仪乐喵体简;
+}
+
+.User{
+    padding:20px 20px 120px 50px;
+}
+
+.UserAvatar{
+    width: 12%;
+    float:left;
+}
+
+.UserInfo{
+    margin:0 10px 0 10px;
+    width: 40%;
+    float:left;
+}
+
+.PurchaseRecord{
+    width: 20%;
+    float:left;
+}

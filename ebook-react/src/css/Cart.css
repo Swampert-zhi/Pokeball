@@ -1,0 +1,89 @@
+.cartItem{
+    padding: 20px;
+    padding-bottom: 220px;
+    border-radius: 20px;
+    height:200px;
+}
+.cartImg{
+    width:150px;
+    height:200px;
+    float:left;
+}
+.cartContent{
+    margin-left: 25px;
+    margin-top: 10px;
+    float:left;
+    height:200px;
+}
+
+.castTitle{
+    font:20px black;
+    font-family: 微软雅黑;
+    font-weight: 900;
+}
+.orderButton{
+    width:120px;
+    margin:20px 10px 0px 0px;
+    background: #39a8ff;
+    color:#FFFFFF;
+    border: none;
+}
+.removeButton{
+    width:120px;
+    margin:20px 10px 0px 0px;
+    background: #fefff9;
+    color: #000000;
+    border: none;
+}
+.deleteButton{
+    width:80px;
+    margin:20px 0px 0px 0px;
+    background: rgb(103, 103, 103);
+    color:#FFFFFF;
+    border: none;
+}
+
+.order{
+    width:100px;
+    height:40px;
+    margin:10px 10px 30px 40px;
+    background: #39a8ff;
+    color:#FFFFFF;
+    border: none;
+    float:left;
+}
+
+.alladd{
+    width:100px;
+    height:40px;
+    margin:10px 10px 30px 0px;
+    background: #4d91ff;
+    color:#FFFFFF;
+    border: none;
+    float:left;
+}
+
+.allremove{
+    width:100px;
+    height:40px;
+    margin:10px 10px 30px 0px;
+    background: #707070;
+    color:#FFFFFF;
+    border: none;
+    float:left;
+}
+
+.alldelete{
+    width:100px;
+    height:40px;
+    margin:10px 10px 30px 0px;
+    background: rgb(103, 103, 103);
+    color:#FFFFFF;
+    border: none;
+}
+
+.totalprice{
+    margin-left: 20px;
+    font-size: large;
+    font-weight: 700;
+}

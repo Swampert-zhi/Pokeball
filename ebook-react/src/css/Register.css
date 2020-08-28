@@ -1,0 +1,20 @@
+.register-background{
+    padding:30px 400px 200px 400px;
+    background-image: url("../assets/signin-background.jpg");
+    background-size: cover;
+    text-align: center;
+    height:577px;
+}
+
+.register-form{
+    background:rgba(256,256,256,0.8);
+    background-size: cover;
+    padding: 30px;
+    padding-right: 50px;
+    /*text-align: center;*/
+    border-radius: 20px;
+}
+
+.register-submit{
+    float: left;
+}

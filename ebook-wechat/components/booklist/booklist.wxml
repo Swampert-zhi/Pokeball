@@ -1,0 +1,21 @@
+<van-search
+  value="{{ value }}"
+  placeholder="请输入搜索关键词"
+  show-action="true"
+  bind:search="onSearch"
+  bind:cancel="cancelSearch"/>
+<view class="list" >
+<block wx:for="{{books}}" wx:for-item="book">
+    <view bindtap="fordetail" id="{{book.bookId}}">
+      <van-card
+      thumb = "{{book.image}}"
+      title = "{{book.title}}"
+      price = "{{book.price}}"
+      >
+        <view slot="desc">
+        <text>作者：{{book.author}}\n语言：{{book.language}}</text>
+        </view>
+      </van-card>
+    </view>
+</block>
+</view>

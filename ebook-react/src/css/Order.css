@@ -1,0 +1,27 @@
+.Order .ant-card {
+    border-radius: 20px;
+}
+
+.Order .ant-card-bordered {
+    border:none;
+}
+
+.Orderitem .ant-card-body{
+    padding: 0;
+}
+
+.ant-card-meta-description {
+    color: rgb(0, 0, 0);
+}
+
+.Ordertitle{
+    background: rgba(53, 170, 255, 0.32);
+    border-radius: 20px 20px 0 0;
+    padding: 20px 0 10px 10px;
+    margin:0;
+}
+
+.Orderinfo{
+    margin:20px;
+}
+

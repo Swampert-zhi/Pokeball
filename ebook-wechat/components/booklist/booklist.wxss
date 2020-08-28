@@ -1,0 +1,4 @@
+/* components/booklist/booklist.wxss */
+.list{
+  margin-bottom: 50px;
+}

@@ -1,0 +1,36 @@
+.detail{
+    margin:10px;
+}
+.detailImg{
+    float:  left;
+    width: 200px;
+    height:270px;
+    margin: 0 50px 0 50px;
+}
+
+.info{
+    margin-left:50px;
+    margin-bottom: 0px;
+}
+.infoTitle{
+    font-size: 35px;
+    font-family: 方正清刻本悦宋简体;
+    color: #2f9cfa;
+    margin-bottom: 10px;
+}
+.BuyButton{
+    border:none;
+    background: #2f9cfa;
+    color:white;
+}
+
+.desc{
+    margin:0 50px 0 50px
+}
+
+.descTitle{
+    font-size: 25px;
+    font-family: 方正清刻本悦宋简体;
+    color: #2f9cfa;
+    margin-bottom: 10px;
+}

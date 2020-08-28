@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "booklist": "../../components/booklist/booklist",
+    "cart":"../../components/cart/cart",
+    "van-tabbar": "@vant/weapp/tabbar/index",
+    "van-tabbar-item": "@vant/weapp/tabbar-item/index"
+  }
+}

@@ -1,0 +1,22 @@
+/* components/cart/cart.wxss */
+.delete {
+  display: inline-block;
+  width: 65px;
+  height: 100%;
+  padding-top:45%;
+  font-size: 15px;
+  line-height: 44px;
+  color: #fff;
+  text-align: center;
+  background-color: #f44;
+}
+.stepper-slot {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.stepper{
+  float: left;
+  margin-right: 60px;
+}
